@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>师静雅 — UX / 交互设计师 · 10年金融科技B端设计经验</title>
-<meta name="description" content="师静雅，UX/交互设计师，10年UI/UX设计经验，深耕金融科技B端业务系统设计，具备平台从0到1建设与整体改版经验。">
+<title>师静雅 — UX / 交互设计师 · 10年B端设计经验</title>
+<meta name="description" content="师静雅，UX/交互设计师，10年UI/UX设计经验，深耕B端业务系统设计，具备平台从0到1建设与整体改版经验。">
 <style>
 :root{
   --bg:#05080f;
@@ -150,8 +150,9 @@ main{position:relative;z-index:2}
 }
 .stat{background:rgba(8,13,26,.72);padding:26px 20px;text-align:center;transition:.35s}
 .stat:hover{background:rgba(20,32,64,.8)}
-.stat .num{font-size:clamp(26px,3.4vw,40px);font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.2}
-.stat .num.num-text{font-size:clamp(20px,2.6vw,30px);letter-spacing:.02em}
+.stat{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.stat .num{font-size:clamp(21px,2.5vw,29px);font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.25}
+.stat .num.num-text{letter-spacing:.02em}
 .stat .lbl{margin-top:6px;font-size:13px;color:var(--txt-dim);letter-spacing:.06em}
 
 /* ---------- sections ---------- */
@@ -213,6 +214,7 @@ section{padding:110px 0;position:relative}
 .tl-card{margin-top:14px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--panel);backdrop-filter:blur(8px);padding:30px 32px;transition:.35s}
 .tl-card:hover{border-color:rgba(56,225,255,.4);box-shadow:0 16px 46px rgba(2,8,24,.5)}
 .tl-card h3{font-size:21px;font-weight:700;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.co-logo{width:30px;height:30px;border-radius:8px;object-fit:cover;flex:none;align-self:center;border:1px solid rgba(120,180,255,.3);box-shadow:0 2px 10px rgba(2,10,30,.5)}
 .tl-card h3 .pos{font-size:14px;font-weight:600;color:var(--teal);padding:3px 12px;border-radius:100px;border:1px solid rgba(46,230,197,.35);background:rgba(46,230,197,.08)}
 .tl-card .desc{margin-top:14px;color:var(--txt-dim);font-size:14.5px}
 .tl-duties{margin-top:16px;display:grid;gap:9px}
@@ -241,13 +243,31 @@ section{padding:110px 0;position:relative}
 .proj .role-chip{margin-top:12px;display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:600;letter-spacing:.08em;color:#04101f;background:var(--grad);padding:4px 14px;border-radius:100px}
 .proj .bg{margin-top:16px;font-size:13.5px;color:var(--txt-dim)}
 .proj .bg b{color:var(--txt);font-weight:600}
-.proj ul{margin-top:14px;display:grid;gap:8px;flex:1}
+.proj ul{margin-top:14px;display:grid;gap:8px;flex:1;align-content:start}
 .proj ul li{list-style:none;font-size:13.5px;color:var(--txt-dim);display:flex;gap:9px}
 .proj ul li::before{content:"—";color:var(--blue);flex:none}
 .proj ul li b{color:var(--txt);font-weight:600;flex:none}
 .proj .metrics{margin-top:20px;padding-top:18px;border-top:1px dashed rgba(120,180,255,.25);display:flex;gap:26px;flex-wrap:wrap}
 .metric .v{font-size:23px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.25}
 .metric .k{font-size:11.5px;color:var(--txt-faint);letter-spacing:.06em;margin-top:2px}
+
+
+/* ---------- 2025 annual: wide project / year band / outlook ---------- */
+.proj-wide{grid-column:1/-1}
+.year-band,.outlook{grid-column:1/-1;margin-top:26px;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 30px}
+.year-band{background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.012))}
+.outlook{background:var(--grad-soft)}
+.band-title{font-size:15.5px;font-weight:700;letter-spacing:.06em;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.band-title .en{font-size:11px;color:var(--txt-faint);letter-spacing:.2em;font-weight:500}
+.year-strip{margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.ys-item{border-left:2px solid rgba(56,225,255,.45);padding-left:15px}
+.ys-num{font-size:22px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.25}
+.ys-lbl{font-size:12.5px;color:var(--txt);font-weight:600;margin-top:3px}
+.ys-sub{font-size:11.5px;color:var(--txt-faint);margin-top:5px;line-height:1.65}
+.outlook-grid{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.outlook-no{font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--cyan)}
+.outlook-item h3{font-size:15.5px;font-weight:700;margin-top:7px}
+.outlook-item p{font-size:13px;color:var(--txt-dim);margin-top:9px;line-height:1.8}
 
 /* ---------- education + contact ---------- */
 .edu-card{
@@ -286,29 +306,22 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .avatar{width:190px;height:190px}
   .strengths,.projects{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
+  .year-strip,.outlook-grid{grid-template-columns:1fr}
+  .year-band,.outlook{padding:22px}
   .contact-grid{grid-template-columns:1fr}
   .sidenav{display:none}
   .wrap{padding:0 22px}
   section{padding:80px 0}
 }
 @media print{
-  /* ---- 打印 / PDF 导出：浅色专业排版 ---- */
-  @page{size:A4;margin:12mm 10mm}
-  /* 重定义颜色变量，一次性修正所有 var() 引用 */
-  :root{
-    --bg:#ffffff;--bg-soft:#f6f8fc;--panel:#ffffff;--line:#d5dcea;
-    --txt:#111827;--txt-dim:#374151;--txt-faint:#6b7280;
-    --cyan:#0e7490;--blue:#1d4ed8;--teal:#0f766e;
-    --grad:linear-gradient(120deg,#0891b2 0%,#2563eb 55%,#7c3aed 100%);
-    --grad-soft:linear-gradient(120deg,rgba(8,145,178,.08),rgba(37,99,235,.08),rgba(124,58,237,.08));
-    --shadow:none;
-  }
+  /* ---- 打印 / PDF 导出：与网页一致的深色科技风 ---- */
+  @page{size:A4;margin:0}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact;animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
-  body{background:#fff!important;color:#111827!important;overflow:visible}
+  body{background:#05080f!important;color:#e8eefc!important;overflow:visible}
   .bg-grid,.bg-noise,.blob,.cursor-glow,.sidenav,.scroll-hint{display:none!important}
   main{z-index:1}
-  .wrap{max-width:100%;padding:0}
+  .wrap{max-width:100%;padding:0 12mm}
   /* 强制显示所有滚动渐显内容 */
   .rv{opacity:1!important;transform:none!important}
   /* 恢复桌面多栏布局（打印宽度会命中移动端断点） */
@@ -320,75 +333,85 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .projects{grid-template-columns:repeat(2,1fr)!important}
   .contact-grid{grid-template-columns:1.2fr 1fr!important}
   /* 首屏紧凑化 */
-  .hero{min-height:auto;padding:0 0 6mm}
+  .hero{min-height:auto;padding:12mm 12mm 6mm}
   .hero h1{font-size:30pt}
   .hero .role{font-size:11.5pt;margin-top:3mm}
   .hero-sub{font-size:9.5pt;margin-top:3mm;max-width:100%}
   .hero-tags{margin-top:4mm;gap:2mm}
-  .tag{padding:1.5mm 4mm;font-size:9pt;border-color:#d5dcea;background:#f6f8fc;box-shadow:none;backdrop-filter:none}
+  .tag{padding:1.5mm 4mm;font-size:9pt;box-shadow:none;backdrop-filter:none}
   .hero-cta{display:none}
-  .avatar{width:32mm;height:32mm;border-color:#fff}
+  .avatar{width:32mm;height:32mm}
   .avatar-ring{padding:1.2mm;box-shadow:none}
   .avatar-badge{display:none}
-  .stats{margin-top:6mm;border-color:#d5dcea;background:#d5dcea}
-  .stat{background:#f6f8fc;padding:4mm 3mm}
-  .stat .num{font-size:15pt}
-  .stat .num.num-text{font-size:12pt}
-  .stat .lbl{font-size:8.5pt;color:#4b5563}
+  .stats{margin-top:6mm}
+  .stat{padding:4mm 3mm}
+  .stat .num{font-size:12pt}
+  .stat .lbl{font-size:8.5pt}
   .marquee-wrap{display:none}
   /* 章节紧凑 */
   section{padding:5mm 0}
-  .sec-head{margin-bottom:4mm}
+  .sec-head{margin-bottom:4mm;break-after:avoid-page}
   .sec-title{font-size:16pt}
   .sec-title .en{font-size:8pt;margin-top:1mm}
   .sec-index{font-size:8pt}
   .sec-line{margin-top:2.5mm}
   /* 卡片 */
   .strengths{gap:3mm}
-  .strength{padding:4mm 4.5mm 3.5mm;border-color:#d5dcea;background:#fff;box-shadow:none;break-inside:avoid}
-  .strength::before{display:none}
+  .strength{padding:4mm 4.5mm 3.5mm;box-shadow:none;backdrop-filter:none;break-inside:avoid}
   .strength h3{font-size:11pt;margin:1.5mm 0 1mm}
-  .strength p{font-size:9pt;color:#374151}
+  .strength p{font-size:9pt}
   .strength .icon{font-size:13pt;right:4mm;top:3.5mm}
   .timeline{padding-left:7mm}
   .timeline::before{left:1.4mm}
   .tl-item{padding-bottom:4mm;break-inside:avoid}
-  .tl-item::before{left:-7mm;width:3mm;height:3mm;border-color:#0e7490;box-shadow:none;background:#fff}
-  .tl-date{font-size:9pt;color:#0e7490}
-  .tl-card{margin-top:1.5mm;padding:3.5mm 4.5mm;border-color:#d5dcea;background:#fff;box-shadow:none;backdrop-filter:none}
+  .tl-item::before{left:-7mm;width:3mm;height:3mm;box-shadow:none}
+  .tl-date{font-size:9pt}
+  .tl-card{margin-top:1.5mm;padding:3.5mm 4.5mm;box-shadow:none;backdrop-filter:none}
   .tl-card h3{font-size:11.5pt}
+  .co-logo{width:6mm;height:6mm;border-radius:1.6mm;object-fit:cover;flex:none;align-self:center;border:1px solid rgba(120,180,255,.35);box-shadow:none}
   .tl-card h3 .pos{font-size:8.5pt;padding:0.6mm 3mm}
-  .tl-card .desc{font-size:9pt;color:#374151;margin-top:1.5mm}
+  .tl-card .desc{font-size:9pt;margin-top:1.5mm}
   .tl-duties{margin-top:2mm;gap:1mm}
-  .tl-duties li{font-size:9pt;color:#374151}
+  .tl-duties li{font-size:9pt}
   .tl-wins{margin-top:2.5mm;gap:2mm}
-  .win{font-size:8.5pt;padding:1mm 3mm;border-color:#a5d8e6;background:#eefafc}
+  .win{font-size:8.5pt;padding:1mm 3mm}
   .projects{gap:3mm}
-  .proj{padding:4mm;border-color:#d5dcea;background:#fff;box-shadow:none;break-inside:avoid}
+  .proj{padding:4mm;box-shadow:none;break-inside:avoid}
   .proj::after{display:none}
   .proj h3{font-size:11pt}
   .proj .period{font-size:8.5pt}
   .proj .role-chip{font-size:8.5pt;padding:0.8mm 3mm;margin-top:1.5mm}
-  .proj .bg{font-size:8.5pt;color:#374151;margin-top:2mm}
+  .proj .bg{font-size:8.5pt;margin-top:2mm}
   .proj ul{margin-top:2mm;gap:1mm}
-  .proj ul li{font-size:8.5pt;color:#374151}
-  .proj .metrics{margin-top:2.5mm;padding-top:2.5mm;border-top-color:#d5dcea;gap:5mm}
+  .proj ul li{font-size:8.5pt}
+  .proj .metrics{margin-top:2.5mm;padding-top:2.5mm;gap:5mm}
   .metric .v{font-size:11pt}
   .metric .k{font-size:7.5pt}
-  .edu-card{padding:4mm 5mm;border-color:#d5dcea;background:#fff;box-shadow:none;break-inside:avoid}
-  .edu-main h3{font-size:12pt}
-  .edu-main .sub{font-size:9pt}
-  .edu-badges .b{font-size:8.5pt;padding:1.2mm 3mm;background:#eefafc;border-color:#a5d8e6}
+  .year-strip{grid-template-columns:repeat(4,1fr)!important}
+  .outlook-grid{grid-template-columns:repeat(3,1fr)!important}
+  .year-band,.outlook{margin-top:3mm;padding:3.5mm 4.5mm;box-shadow:none;break-inside:avoid}
+  .band-title{font-size:10.5pt}
+  .band-title .en{font-size:7.5pt}
+  .year-strip{margin-top:2.5mm;gap:4mm}
+  .ys-item{padding-left:3mm}
+  .ys-num{font-size:11pt}
+  .ys-lbl{font-size:8.5pt;margin-top:0.8mm}
+  .ys-sub{font-size:7.5pt;margin-top:1mm}
+  .outlook-grid{margin-top:2.5mm;gap:4mm}
+  .outlook-no{font-size:8pt}
+  .outlook-item h3{font-size:10pt;margin-top:1mm}
+  .outlook-item p{font-size:8.5pt;margin-top:1.2mm}
+  #contact{break-inside:avoid}
   .contact-grid{gap:4mm}
-  .contact-big{padding:5mm 6mm;background:#f2f7fd;border-color:#d5dcea}
+  .contact-big{padding:5mm 6mm;backdrop-filter:none}
   .contact-big h3{font-size:13pt}
   .contact-big p{font-size:9pt;margin-top:2mm}
   .contact-list{gap:2mm}
-  .contact-item{padding:2.5mm 3.5mm;border-color:#d5dcea;background:#fff;box-shadow:none;backdrop-filter:none;break-inside:avoid}
+  .contact-item{padding:2.5mm 3.5mm;box-shadow:none;backdrop-filter:none;break-inside:avoid}
   .contact-item .ic{width:8mm;height:8mm;font-size:10pt;border-radius:2.5mm}
   .contact-item .k{font-size:7pt}
   .contact-item .v{font-size:9.5pt}
-  footer{padding:3mm 0;font-size:8pt;border-top-color:#d5dcea}
+  footer{padding:4mm 12mm 8mm;font-size:8pt}
 }
 </style>
 </head>
@@ -406,7 +429,6 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   <a href="#strengths"><span class="label">个人优势</span><span class="dot"></span></a>
   <a href="#experience"><span class="label">工作经历</span><span class="dot"></span></a>
   <a href="#projects"><span class="label">项目经历</span><span class="dot"></span></a>
-  <a href="#education"><span class="label">教育经历</span><span class="dot"></span></a>
   <a href="#contact"><span class="label">联系我</span><span class="dot"></span></a>
 </nav>
 
@@ -418,7 +440,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     <div class="hero-left">
       <div class="hero-kicker rv on"><span class="pulse"></span>UX / INTERACTION DESIGNER · 开放求职中</div>
       <h1 class="rv on rv-d1">师静雅<span class="grad">.</span></h1>
-      <div class="role rv on rv-d1">用设计让 <b>复杂业务</b> 变得 <b>简单可用</b> —— 金融科技 B 端体验设计</div>
+      <div class="role rv on rv-d1">用设计让 <b>复杂业务</b> 变得 <b>简单可用</b> —— B 端产品体验设计</div>
       <p class="hero-sub rv on rv-d2">10 年 UI/UX 设计经验，深耕智能运营、SCRM、数据产品与 AI 应用设计。担任设计负责人，独立完成从 0 到 1 的平台建设、整体改版与研发落地跟进。</p>
 
       <div class="hero-tags rv on rv-d2">
@@ -472,7 +494,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
         <div class="icon">🏛️</div>
         <div class="no">01</div>
         <h3>10年 B 端设计深耕</h3>
-        <p>深耕金融科技 B 端业务系统设计，具备平台从 0 到 1 建设与整体改版经验。担任项目设计负责人，独立推进方案设计、交付及研发实现跟进。</p>
+        <p>深耕 B 端业务系统设计，具备平台从 0 到 1 建设与整体改版经验。担任项目设计负责人，独立推进方案设计、交付及研发实现跟进。</p>
       </div>
       <div class="strength rv rv-d1" data-tilt>
         <div class="icon">🧩</div>
@@ -509,7 +531,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <div class="tl-item now rv">
         <div class="tl-date">2018.10 — 至今</div>
         <div class="tl-card">
-          <h3>北京淇瑀信息科技有限公司 <span class="pos">UX / 交互设计师</span></h3>
+          <h3><img class="co-logo" src="data:image/jpeg;base64,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" alt="">北京淇瑀信息科技有限公司 <span class="pos">设计专家</span></h3>
           <p class="desc">负责智能运营、企业微信 SCRM 及工作台、毓数、Glaucus、Lumo AI 等平台的 UI 与交互设计，覆盖运营配置、客户服务、数据分析及 AI 应用，支持多产品持续迭代与设计交付。</p>
           <ul class="tl-duties">
             <li>担任智能运营、运营门户等项目设计负责人，完成信息架构、操作流程与视觉方案设计，推进方案评审、设计说明与上线前走查</li>
@@ -531,7 +553,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <div class="tl-item rv">
         <div class="tl-date">2018.04 — 2018.09</div>
         <div class="tl-card">
-          <h3>北京傲游天下科技有限公司 <span class="pos">UI 设计师</span></h3>
+          <h3><img class="co-logo" src="data:image/jpeg;base64,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" alt="">北京傲游天下科技有限公司 <span class="pos">UI 设计师</span></h3>
           <p class="desc">负责傲游浏览器移动端 APP 的主要视觉设计，对接产品经理梳理需求与使用流程，完成页面布局、界面样式及相关设计交付。</p>
           <ul class="tl-duties">
             <li>参与 APP 整体改版与后续迭代，完成 1 次大改版及 10 次迭代设计支持，持续更新视觉规范，保持新增功能与既有界面的一致性</li>
@@ -544,7 +566,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <div class="tl-item rv">
         <div class="tl-date">2016.09 — 2018.03</div>
         <div class="tl-card">
-          <h3>北京飞行者音乐科技有限公司 <span class="pos">UI 设计师</span></h3>
+          <h3><img class="co-logo" src="data:image/jpeg;base64,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" alt="">北京飞行者音乐科技有限公司 <span class="pos">UI 设计师</span></h3>
           <p class="desc">负责移动端产品及 App 视觉设计与创意输出，参与小样儿 App、House 微信服务号等项目。</p>
           <ul class="tl-duties">
             <li>协助产品经理完成市场分析、竞品调研及功能模块梳理，主导产品规划构思、创意设计及界面风格定位</li>
@@ -576,15 +598,18 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
         <span class="role-chip">UI/UX 设计负责人</span>
         <p class="bg"><b>背景：</b>围绕企业微信客户经营与坐席作业场景，建设 SCRM 管理后台及工作台，解决策略部署繁杂、功能入口分散、信息不一致及操作路径长等问题。</p>
         <ul>
-          <li>联合产品整合分散的企微触达能力，设计经营画布，梳理多轮次、多渠道触达策略的配置与展示</li>
-          <li>优化客户详情，统一多产品额度、定价及优惠信息表达，减少跨页面查询</li>
-          <li>参与预约与触发式任务、提醒及聚合聊天等功能设计</li>
-          <li>设计 AI 助手的话术推荐、反馈审核及学习闭环</li>
+          <li><b>智能画布：</b>节点与连线图谱将「代码规则」翻译为可视化流程图，封装人群圈选、策略动作等智能卡片</li>
+          <li><b>无打断配置：</b>抽屉式表单承载配置录入，自适应 / 自动布局保证任意协作者打开即最佳视图</li>
+          <li><b>AI 话术闭环：</b>大模型话术推荐 + 勾选式反馈 + 同屏审核动线，零滚动零跳转降低引用机错率</li>
+          <li><b>信息统一表达：</b>优化客户详情，统一多产品额度、定价及优惠信息表达，减少跨页面查询</li>
         </ul>
         <div class="metrics">
           <div class="metric"><div class="v">10s → 2s</div><div class="k">坐席平均响应时长</div></div>
           <div class="metric"><div class="v">3步 → 1步</div><div class="k">常用消息操作</div></div>
           <div class="metric"><div class="v">+23.4%</div><div class="k">每日服务客户数</div></div>
+          <div class="metric"><div class="v">-50%</div><div class="k">流程协作评审时间</div></div>
+          <div class="metric"><div class="v">10,497</div><div class="k">Reoffer 实验组用户</div></div>
+          <div class="metric"><div class="v">986.7万</div><div class="k">T7 动支金额</div></div>
         </div>
       </div>
 
@@ -594,12 +619,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
           <div class="period">2021.06 — 至今</div>
         </div>
         <span class="role-chip">UI/UX 设计负责人</span>
-        <p class="bg"><b>背景：</b>面向内部运营人员的策略管理平台，覆盖客群管理、策略配置、多渠道触达及效果分析，从 0 搭建至 1.0 整体改版及 2.0 策略画布建设。</p>
+        <p class="bg"><b>背景：</b>面向用户全生命周期的一站式增长转化平台，覆盖客群管理、策略配置、多渠道触达及效果分析，从 0 搭建至 1.0 整体改版及 2.0 策略画布建设。</p>
         <ul>
-          <li>从信息架构、交互与视觉三个层面梳理改版方案，重新组织菜单、功能入口及页面布局</li>
-          <li>设计可拖拽、可复用的策略组件，梳理条件配置、节点衔接及反馈方式</li>
-          <li>负责策略画布布局与交互，完善「客群—策略—触达—分析」业务闭环</li>
-          <li>参与 AI 机器人、策略效果看板、用户及客群洞察等功能升级</li>
+          <li><b>用户 / 客群洞察：</b>统一行为采集与个体画像视图，模块化信息聚合 + 时间轴行为序列可视化，解决「看不清用户路径」痛点</li>
+          <li><b>策略画布：</b>将复杂逻辑翻译为可理解、可操作界面，「圈人—配置—执行—复盘」闭环流程显著降低学习成本与页面跳转成本</li>
+          <li><b>标签需求管理：</b>模块化规则组件「搭积木」式组合，实时人群规模预估与逻辑冲突校验，将错误拦截在发生之前</li>
+          <li><b>数据可视化：</b>按业务性质匹配图形表达，漏斗内嵌对比与钻取降低多人群对比门槛，大图标清晰展示趋势</li>
         </ul>
         <div class="metrics">
           <div class="metric"><div class="v">+49.7%</div><div class="k">策略创建数量</div></div>
@@ -614,16 +639,17 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
           <div class="period">2025.10 — 2026.03</div>
         </div>
         <span class="role-chip">UI/UX 设计负责人</span>
-        <p class="bg"><b>背景：</b>建设一站式企业经营助手，提供实时在线的经营分析、风险规避、合同审核，围绕 AI 对话与多助手场景形成统一操作路径与界面规范。</p>
+        <p class="bg"><b>背景：</b>一站式企业经营助手（合规官 / 企业分析 / 文档生成等多 AI 助手），提供经营分析、风险规避、合同审核；2025 年完成平台整体架构重构与官网从 0 到 1 搭建。</p>
         <ul>
-          <li>承担 SaaS 版及官网 UI 与交互设计，构建首页、对话页及核心功能路径</li>
-          <li>梳理不同使用场景的功能入口、内容结构及操作反馈，保持交互一致性</li>
-          <li>统一色彩、字体、间距、阴影与组件规范，整理表单、表格、空态、错误态等常用模式</li>
-          <li>配合产品与研发持续迭代，支持新增功能沿用既有规范</li>
+          <li><b>架构重构：</b>针对旧版布局单一、可扩展性弱的问题重新组织信息架构，构建多助手统一入口与首页能力矩阵</li>
+          <li><b>数据可视化与多分辨率适配：</b>卡片高纯度色彩建立视觉重量引导视线流，轻量化页面氛围聚焦文字信息，适配 1366×768 至 1920×1080</li>
+          <li><b>官网从 0 到 1：</b>独立搭建网站框架，覆盖产品功能、核心优势、应用场景、荣誉资质与部署方式等完整信息层级</li>
+          <li><b>规范体系：</b>统一色彩、字体、间距、阴影与组件规范，整理表单、表格、空态、错误态等常用模式，支持新增功能沿用既有规范</li>
         </ul>
         <div class="metrics">
           <div class="metric"><div class="v">0 → 1</div><div class="k">SaaS + 官网设计交付</div></div>
-          <div class="metric"><div class="v">统一规范</div><div class="k">多助手体验一致性基础</div></div>
+          <div class="metric"><div class="v">架构重构</div><div class="k">多助手统一体验骨架</div></div>
+          <div class="metric"><div class="v">2 档+</div><div class="k">屏幕分辨率自适应</div></div>
         </div>
       </div>
 
@@ -647,27 +673,67 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
           <div class="metric"><div class="v">6</div><div class="k">支持业务线</div></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ================= EDUCATION ================= -->
-<section id="education">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="sec-index">04 / EDUCATION</div>
-      <h2 class="sec-title">教育经历<span class="en">Education</span></h2>
-      <div class="sec-line"></div>
-    </div>
-    <div class="edu-card rv">
-      <div class="edu-main">
-        <h3>邢台学院 · 本科</h3>
-        <div class="sub">市场营销管理 ｜ 2014 — 2016</div>
+      <div class="proj proj-wide rv" data-tilt>
+        <div class="proj-top">
+          <h3>大安全客户端 & 指标生成平台（毓数）</h3>
+          <div class="period">2025</div>
+        </div>
+        <span class="role-chip">UI/UX 设计负责人</span>
+        <p class="bg"><b>背景：</b>2025 年独立承担大安全客户端与指标生成平台（毓数）双平台 0→1 设计：前者为企业级安全一站式客户端，后者统筹公司到业务部门对核心经营指标的统一认知。</p>
+        <ul>
+          <li><b>全链路框架搭建：</b>独立搭建大安全客户端框架及主视觉，覆盖登录、工作台、网络诊断、安全服务、IT 服务与系统设置</li>
+          <li><b>诊断流程可视化：</b>代理 / 完整性 / 地址探测 / DNS 连通性逐项状态反馈，一键修复不打断正常使用</li>
+          <li><b>智能体切换面板：</b>安全 / IT / 合规小助手按场景分发，标签化能力一目了然</li>
+          <li><b>指标全生命周期：</b>毓数平台指标字典、数据资产、自助查询、OBI、指标生成、数据建模多模块信息架构与界面设计，SQL 配置与逻辑运算树可视化校验</li>
+        </ul>
       </div>
-      <div class="edu-badges">
-        <span class="b">🎖️ 国家励志奖学金</span>
-        <span class="b">🏆 创业项目年级一等奖</span>
-        <span class="b">📚 学习委员</span>
+
+      <div class="year-band rv">
+        <div class="band-title">业务版图 · 项目全景<span class="en">PROJECT LANDSCAPE</span></div>
+        <div class="year-strip">
+          <div class="ys-item">
+            <div class="ys-num">01</div>
+            <div class="ys-lbl">智能运营平台</div>
+            <div class="ys-sub">用户洞察 · 客群洞察 · 策略创建 · 标签需求管理 · 组件库</div>
+          </div>
+          <div class="ys-item">
+            <div class="ys-num">02</div>
+            <div class="ys-lbl">企微前 / 后台</div>
+            <div class="ys-sub">智能画布 · 智能助手 · Reoffer · 多额度多定价</div>
+          </div>
+          <div class="ys-item">
+            <div class="ys-num">03</div>
+            <div class="ys-lbl">大安全合规</div>
+            <div class="ys-sub">Lumo AI 平台与官网 · 大安全客户端</div>
+          </div>
+          <div class="ys-item">
+            <div class="ys-num">04</div>
+            <div class="ys-lbl">其他项目支持</div>
+            <div class="ys-sub">指标生成平台 · 移动端流智平台</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outlook rv">
+        <div class="band-title">总结 & 展望<span class="en">2025 REVIEW & OUTLOOK</span></div>
+        <div class="outlook-grid">
+          <div class="outlook-item">
+            <div class="outlook-no">01</div>
+            <h3>能力纵深</h3>
+            <p>从「设计执行」到「系统构建」，建立业务导向的设计组件库，为更庞大的业务系统设计清晰、灵活、可持续的体验骨架。</p>
+          </div>
+          <div class="outlook-item">
+            <div class="outlook-no">02</div>
+            <h3>价值外延</h3>
+            <p>从「需求实现」到「体验驱动」，推动设计价值的度量与显性化，确保每一个设计决策都与业务结果紧密相连。</p>
+          </div>
+          <div class="outlook-item">
+            <div class="outlook-no">03</div>
+            <h3>视野前瞻</h3>
+            <p>从「解决当下」到「定义未来」，深入探索 AI+Design 在提效领域的应用，拥抱「智能化内嵌」的下一代体验。</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -677,7 +743,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 <section id="contact">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="sec-index">05 / CONTACT</div>
+      <div class="sec-index">04 / CONTACT</div>
       <h2 class="sec-title">联系我<span class="en">Get In Touch</span></h2>
       <div class="sec-line"></div>
     </div>
