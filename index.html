@@ -205,12 +205,12 @@ section{padding:110px 0;position:relative}
 .tl-item{position:relative;padding-bottom:58px}
 .tl-item:last-child{padding-bottom:0}
 .tl-item::before{
-  content:"";position:absolute;left:-34px;top:9px;width:16px;height:16px;border-radius:50%;
+  content:"";position:absolute;left:-34px;top:2px;width:16px;height:16px;border-radius:50%;
   background:var(--bg);border:2.5px solid var(--cyan);box-shadow:0 0 16px rgba(56,225,255,.65);
 }
 .tl-item.now::before{animation:pulse2 2.2s infinite}
 @keyframes pulse2{0%,100%{box-shadow:0 0 0 0 rgba(56,225,255,.5)}50%{box-shadow:0 0 0 9px rgba(56,225,255,0)}}
-.tl-date{font-size:13px;letter-spacing:.18em;color:var(--cyan);font-weight:600;font-variant-numeric:tabular-nums}
+.tl-date{font-size:13px;line-height:20px;letter-spacing:.18em;color:var(--cyan);font-weight:600;font-variant-numeric:tabular-nums}
 .tl-card{margin-top:14px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--panel);backdrop-filter:blur(8px);padding:30px 32px;transition:.35s}
 .tl-card:hover{border-color:rgba(56,225,255,.4);box-shadow:0 16px 46px rgba(2,8,24,.5)}
 .tl-card h3{font-size:21px;font-weight:700;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
@@ -362,10 +362,10 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .strength p{font-size:9pt}
   .strength .icon{font-size:13pt;right:4mm;top:3.5mm}
   .timeline{padding-left:7mm}
-  .timeline::before{left:1.4mm}
+  .timeline::before{left:calc(1.5mm - 1px)}
   .tl-item{padding-bottom:4mm;break-inside:avoid}
-  .tl-item::before{left:-7mm;width:3mm;height:3mm;box-shadow:none}
-  .tl-date{font-size:9pt}
+  .tl-item::before{left:-7mm;top:0;width:3mm;height:3mm;box-shadow:none}
+  .tl-date{font-size:9pt;line-height:3mm}
   .tl-card{margin-top:1.5mm;padding:3.5mm 4.5mm;box-shadow:none;backdrop-filter:none}
   .tl-card h3{font-size:11.5pt}
   .co-logo{width:6mm;height:6mm;border-radius:1.6mm;object-fit:cover;flex:none;align-self:center;border:1px solid rgba(120,180,255,.35);box-shadow:none}
