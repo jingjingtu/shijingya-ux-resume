@@ -259,11 +259,13 @@ section{padding:110px 0;position:relative}
 .outlook{background:var(--grad-soft)}
 .band-title{font-size:15.5px;font-weight:700;letter-spacing:.06em;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .band-title .en{font-size:11px;color:var(--txt-faint);letter-spacing:.2em;font-weight:500}
-.year-strip{margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.ys-item{border-left:2px solid rgba(56,225,255,.45);padding-left:15px}
-.ys-num{font-size:22px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.25}
-.ys-lbl{font-size:12.5px;color:var(--txt);font-weight:600;margin-top:3px}
-.ys-sub{font-size:11.5px;color:var(--txt-faint);margin-top:5px;line-height:1.65}
+.year-strip{margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ys-item{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:15px 16px 13px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012));overflow:hidden;transition:.3s}
+.ys-item:hover{transform:translateY(-3px);border-color:rgba(56,225,255,.4);box-shadow:0 10px 28px rgba(2,10,30,.45)}
+.ys-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad)}
+.ys-num{position:absolute;top:12px;right:14px;font-size:24px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.2;opacity:.95}
+.ys-lbl{font-size:14px;color:var(--txt);font-weight:700;letter-spacing:.02em;padding-right:36px}
+.ys-sub{font-size:11.5px;color:var(--txt-dim);line-height:1.7;margin-top:auto;padding-top:9px}
 .outlook-grid{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .outlook-no{font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--cyan)}
 .outlook-item h3{font-size:15.5px;font-weight:700;margin-top:7px}
@@ -392,11 +394,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .year-band,.outlook{margin-top:3mm;padding:3.5mm 4.5mm;box-shadow:none;break-inside:avoid}
   .band-title{font-size:10.5pt}
   .band-title .en{font-size:7.5pt}
-  .year-strip{margin-top:2.5mm;gap:4mm}
-  .ys-item{padding-left:3mm}
-  .ys-num{font-size:11pt}
-  .ys-lbl{font-size:8.5pt;margin-top:0.8mm}
-  .ys-sub{font-size:7.5pt;margin-top:1mm}
+  .year-strip{margin-top:2.5mm;gap:3mm}
+  .ys-item{padding:2.5mm 3mm 2mm;border-radius:2.5mm;box-shadow:none;transform:none}
+  .ys-item::before{width:0.8mm}
+  .ys-num{top:2mm;right:2.5mm;font-size:10pt}
+  .ys-lbl{font-size:9pt;padding-right:7mm}
+  .ys-sub{font-size:7.5pt;padding-top:1.5mm}
   .outlook-grid{margin-top:2.5mm;gap:4mm}
   .outlook-no{font-size:8pt}
   .outlook-item h3{font-size:10pt;margin-top:1mm}
