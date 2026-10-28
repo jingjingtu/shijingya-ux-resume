@@ -98,12 +98,18 @@ main{position:relative;z-index:2}
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:220% 220%;animation:gradmove 7s ease infinite;
 }
+.hero h1 .h1-title{
+  font-size:.38em;font-weight:700;letter-spacing:.24em;margin-left:.55em;vertical-align:.42em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  background-size:220% 220%;animation:gradmove 7s ease infinite;white-space:nowrap;
+}
 @keyframes gradmove{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .hero .role{
   margin-top:16px;font-size:clamp(16px,2vw,21px);color:var(--txt-dim);font-weight:400;letter-spacing:.06em;
 }
 .hero .role b{color:var(--txt);font-weight:600}
-.hero-sub{margin-top:20px;max-width:600px;color:var(--txt-dim);font-size:15px}
+.hero-sub{margin-top:20px;max-width:700px;color:var(--txt-dim);font-size:15px;line-height:1.95}
+.hero-sub .sub-label{color:var(--cyan);font-weight:600}
 .hero-tags{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
 .tag{
   padding:8px 18px;border-radius:100px;font-size:13.5px;color:var(--txt);
@@ -473,9 +479,9 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   <div class="hero-row">
     <div class="hero-left">
       <div class="hero-kicker rv on"><span class="pulse"></span>UX / INTERACTION DESIGNER · 开放求职中</div>
-      <h1 class="rv on rv-d1">师静雅<span class="grad">.</span></h1>
-      <div class="role rv on rv-d1">用设计让 <b>复杂业务</b> 变得 <b>简单可用</b> —— 企业级产品体验设计</div>
-      <p class="hero-sub rv on rv-d2">10 年 UI/UX 设计经验，深耕智能运营、SCRM、数据产品与 AI 应用设计。担任设计负责人，独立完成从 0 到 1 的平台建设、整体改版与研发落地跟进。</p>
+      <h1 class="rv on rv-d1">师静雅<span class="grad">.</span><span class="h1-title">设计专家</span></h1>
+      <div class="role rv on rv-d1">让 <b>复杂业务</b>，拥有<b>更好的产品体验</b>。</div>
+      <p class="hero-sub rv on rv-d2">10 年多端产品设计经验，聚焦企业级业务系统、复杂交互与设计体系建设。<br>具备 B 端、C 端及官网设计经验，参与多个业务平台从 0 到 1 建设与持续迭代。擅长将复杂业务规则转化为清晰、高效的交互体验，并持续探索 AI 辅助设计的实践与落地。<br><span class="sub-label">专业方向：</span>企业级产品设计 / 复杂业务交互 / Design System / AI 辅助设计</p>
 
       <div class="hero-tags rv on rv-d2">
         <span class="tag"><span class="hl">10年</span> UI/UX 设计经验</span>
