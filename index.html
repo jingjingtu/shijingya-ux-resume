@@ -249,6 +249,9 @@ section{padding:110px 0;position:relative}
 .proj .role-chip{margin-top:12px;display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:600;letter-spacing:.08em;color:#04101f;background:var(--grad);padding:4px 14px;border-radius:100px}
 .proj .bg{margin-top:16px;font-size:13.5px;color:var(--txt-dim)}
 .proj .bg b{color:var(--txt);font-weight:600}
+.proj .lead{margin-top:14px;font-size:14px;font-weight:600;color:var(--txt);letter-spacing:.02em}
+.proj .sub-h{margin-top:16px;font-size:14px;font-weight:700;color:var(--txt)}
+.proj .sub-p{margin-top:6px;font-size:13.5px;color:var(--txt-dim);line-height:1.8}
 .proj ul{margin-top:14px;display:grid;gap:8px;flex:1;align-content:start}
 .proj ul li{list-style:none;font-size:13.5px;color:var(--txt-dim);display:flex;gap:9px}
 .proj ul li::before{content:"—";color:var(--blue);flex:none}
@@ -423,6 +426,9 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .proj ul{margin-top:2mm;gap:1mm}
   .proj ul li{font-size:8.5pt}
   .proj .metrics{margin-top:2.5mm;padding-top:2.5mm;gap:5mm}
+  .proj .lead{font-size:10pt;margin-top:2mm}
+  .proj .sub-h{font-size:10pt;margin-top:2.5mm}
+  .proj .sub-p{font-size:9pt;margin-top:1mm}
   .metric .v{font-size:11pt}
   .metric .k{font-size:7.5pt}
   .year-strip{grid-template-columns:repeat(4,1fr)!important}
@@ -630,21 +636,21 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     <div class="projects">
       <div class="proj rv" data-tilt>
         <div class="proj-top">
-          <h3>智客星 SCRM 与工作台<br>（企业微信）升级</h3>
+          <h3>智客星 SCRM 与企业微信工作台</h3>
           <div class="period">2023.12 — 至今</div>
         </div>
         <span class="role-chip">UI/UX 设计负责人</span>
-        <p class="bg"><b>背景：</b>围绕企业微信客户经营与坐席作业场景，建设 SCRM 管理后台及工作台，解决策略部署繁杂、功能入口分散、信息不一致及操作路径长等问题。</p>
+        <p class="lead">让复杂的客户经营流程，变得更直观、更高效。</p>
+        <p class="bg">项目围绕企业微信客户经营与坐席日常作业展开，针对策略配置复杂、功能入口分散、客户信息查询链路长等问题，重新梳理核心操作流程与信息组织方式，提升日常作业的便捷性与一致性。</p>
         <ul>
-          <li><b>智能画布：</b>节点与连线图谱将「代码规则」翻译为可视化流程图，封装人群圈选、策略动作等智能卡片</li>
-          <li><b>无打断配置：</b>抽屉式表单承载配置录入，自适应 / 自动布局保证任意协作者打开即最佳视图</li>
-          <li><b>AI 话术闭环：</b>大模型话术推荐 + 勾选式反馈 + 同屏审核动线，零滚动零跳转降低引用机错率</li>
-          <li><b>信息统一表达：</b>优化客户详情，统一多产品额度、定价及优惠信息表达，减少跨页面查询</li>
+          <li><b>01｜策略配置可视化</b>将复杂的策略规则转化为节点式画布，通过可视化连接关系与模块化配置组件，帮助用户理解策略执行逻辑。</li>
+          <li><b>02｜坐席工作台体验优化</b>围绕客户查询、消息回复与任务处理等高频操作，优化页面布局、信息优先级及操作路径，减少重复切换与操作负担。</li>
+          <li><b>03｜AI 话术推荐体验</b>将大模型推荐能力融入坐席作业流程，优化多话术展示、选择引用与反馈交互，让智能推荐更贴近实际业务场景。</li>
+          <li><b>04｜客户信息统一呈现</b>整合多产品额度、定价及优惠信息，统一信息展示规则，降低跨页面查询和信息理解成本。</li>
         </ul>
         <div class="metrics">
-          <div class="metric"><div class="v">10s → 2s</div><div class="k">坐席平均响应时长</div></div>
-          <div class="metric"><div class="v">3步 → 1步</div><div class="k">常用消息操作</div></div>
-          <div class="metric"><div class="v">-50%</div><div class="k">流程协作评审时间</div></div>
+          <div class="metric"><div class="v">10s → 2s</div><div class="k">坐席平均响应时间</div></div>
+          <div class="metric"><div class="v">3 步 → 1 步</div><div class="k">高频消息操作步骤</div></div>
         </div>
       </div>
 
@@ -654,12 +660,13 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
           <div class="period">2021.06 — 至今</div>
         </div>
         <span class="role-chip">UI/UX 设计负责人</span>
-        <p class="bg"><b>背景：</b>面向用户全生命周期的一站式增长转化平台，覆盖客群管理、策略配置、多渠道触达及效果分析，从 0 搭建至 1.0 整体改版及 2.0 策略画布建设。</p>
+        <p class="lead">从复杂的运营配置，到清晰可控的策略管理体验。</p>
+        <p class="bg">面向用户全生命周期运营场景，参与平台从初期建设、整体改版到策略画布的持续演进。围绕客群分析、策略配置、执行管理及效果复盘等核心环节，优化信息架构与交互流程，降低复杂运营任务的理解和操作成本。</p>
         <ul>
-          <li><b>用户 / 客群洞察：</b>统一行为采集与个体画像视图，模块化信息聚合 + 时间轴行为序列可视化，解决「看不清用户路径」痛点</li>
-          <li><b>策略画布：</b>将复杂逻辑翻译为可理解、可操作界面，「圈人—配置—执行—复盘」闭环流程显著降低学习成本与页面跳转成本</li>
-          <li><b>标签需求管理：</b>模块化规则组件「搭积木」式组合，实时人群规模预估与逻辑冲突校验，将错误拦截在发生之前</li>
-          <li><b>数据可视化：</b>按业务性质匹配图形表达，漏斗内嵌对比与钻取降低多人群对比门槛，大图标清晰展示趋势</li>
+          <li><b>01｜用户与客群洞察</b>重新梳理用户属性、行为数据及运营记录的信息层级，通过模块化展示与行为时间轴，让用户画像和行为变化更易理解。</li>
+          <li><b>02｜策略画布建设</b>将多步骤策略配置转化为可视化画布，设计节点、连线、配置面板及状态反馈，使复杂规则的创建与调整更加直观。</li>
+          <li><b>03｜标签需求管理</b>通过模块化条件配置，帮助运营人员组合筛选规则，并以人群规模预估与规则校验辅助配置决策。</li>
+          <li><b>04｜数据分析与可视化</b>根据指标类型与分析任务选择合适的图表表达，优化筛选、对比与数据钻取体验，提高关键经营信息的可读性。</li>
         </ul>
         <div class="metrics">
           <div class="metric"><div class="v">2周 → 2天</div><div class="k">策略部署周期</div></div>
@@ -669,16 +676,17 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 
       <div class="proj rv" data-tilt>
         <div class="proj-top">
-          <h3>Lumo AI SaaS 平台<br>及官网从 0 到 1 建设</h3>
+          <h3>Lumo AI SaaS 平台与官网设计</h3>
           <div class="period">2025.10 — 2026.03</div>
         </div>
         <span class="role-chip">UI/UX 设计负责人</span>
-        <p class="bg"><b>背景：</b>一站式企业经营助手（合规官 / 企业分析 / 文档生成等多 AI 助手），提供经营分析、风险规避、合同审核；2025 年完成平台整体架构重构与官网从 0 到 1 搭建。</p>
+        <p class="lead">为多 AI 助手构建统一、易理解的产品体验。</p>
+        <p class="bg">围绕企业经营分析、合规审核及文档处理等业务场景，参与 AI SaaS 平台的信息架构重构与官网从 0 到 1 设计。通过整合功能入口、优化信息层级及统一视觉规范，建立清晰、易扩展的多助手产品体验。</p>
         <ul>
-          <li><b>架构重构：</b>针对旧版布局单一、可扩展性弱的问题重新组织信息架构，构建多助手统一入口与首页能力矩阵</li>
-          <li><b>数据可视化与多分辨率适配：</b>卡片高纯度色彩建立视觉重量引导视线流，轻量化页面氛围聚焦文字信息，适配 1366×768 至 1920×1080</li>
-          <li><b>官网从 0 到 1：</b>独立搭建网站框架，覆盖产品功能、核心优势、应用场景、荣誉资质与部署方式等完整信息层级</li>
-          <li><b>规范体系：</b>统一色彩、字体、间距、阴影与组件规范，整理表单、表格、空态、错误态等常用模式，支持新增功能沿用既有规范</li>
+          <li><b>01｜多助手信息架构</b>重新组织产品导航与功能入口，梳理不同 AI 助手的能力边界与使用场景，降低用户理解和选择成本。</li>
+          <li><b>02｜AI 工作台设计</b>围绕任务发起、结果展示与信息查看等关键环节，优化页面布局和交互反馈，增强不同功能之间的体验一致性。</li>
+          <li><b>03｜官网从 0 到 1 建设</b>规划官网内容结构，建立产品能力、应用场景、核心优势及部署方式等信息层级，完成视觉与响应式设计。</li>
+          <li><b>04｜设计规范沉淀</b>统一色彩、字体、间距、表单及基础状态规范，支持平台后续功能扩展与设计复用。</li>
         </ul>
         <div class="metrics">
           <div class="metric"><div class="v">0 → 1</div><div class="k">SaaS + 官网设计交付</div></div>
@@ -689,16 +697,16 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 
       <div class="proj rv rv-d1" data-tilt>
         <div class="proj-top">
-          <h3>移动数据看板<br>与指标预警建设</h3>
+          <h3>移动数据看板与指标预警</h3>
           <div class="period">2025.03 — 2025.06</div>
         </div>
         <span class="role-chip">UI/UX 设计师</span>
-        <p class="bg"><b>背景：</b>面向企业管理者及业务负责人打造的移动端经营数据分析平台，支持随时随地查看关键经营指标、分析数据趋势及查询业务明细，满足移动办公场景下快速获取信息与辅助决策的需求。</p>
+        <p class="lead">让复杂经营数据，在移动端也能快速看懂。</p>
+        <p class="bg">面向企业管理者及业务负责人，将 PC 端数据分析能力适配至移动场景。围绕高频指标查看、趋势分析及业务明细查询，重新组织信息层级与操作方式，满足碎片化场景下快速获取经营信息的需求。</p>
         <ul>
-          <li><b>多端体验适配：</b>基于 PC 端复杂的数据分析能力，针对移动端屏幕尺寸与操作场景，重新组织信息层级及交互方式</li>
-          <li><b>数据高效呈现：</b>结合趋势图表、指标数据和明细列表，优化信息密度与视觉层级，帮助用户快速定位关键数据</li>
-          <li><b>灵活筛选与配置：</b>通过筛选弹层、报表切换及指标自定义等方式，兼顾复杂查询能力与移动端操作效率</li>
-          <li><b>场景化体验优化：</b>围绕管理者碎片化查看数据的特点，减少不必要的点击与输入，提升数据浏览和查询效率</li>
+          <li><b>01｜移动端信息重构</b>根据移动端屏幕空间与使用场景，重新定义数据展示优先级，突出核心指标与关键变化。</li>
+          <li><b>02｜数据展示优化</b>结合指标卡片、趋势图表和明细列表，建立清晰的数据层级，减少阅读和理解负担。</li>
+          <li><b>03｜复杂操作轻量化</b>通过筛选弹层、报表切换与指标自定义等设计，在有限空间内兼顾查询灵活性与操作效率。</li>
         </ul>
         <div class="metrics">
           <div class="metric"><div class="v">移动 + PC</div><div class="k">多端体验适配</div></div>
@@ -709,17 +717,16 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 
       <div class="proj proj-wide rv" data-tilt>
         <div class="proj-top">
-          <h3>大安全客户端 & 指标生成平台（毓数）</h3>
+          <h3>企业级工具产品设计实践</h3>
           <div class="period">2025</div>
         </div>
         <span class="role-chip">UI/UX 设计负责人</span>
-        <p class="bg"><b>背景：</b>2025 年独立承担大安全客户端与指标生成平台（毓数）双平台 0→1 设计：前者为企业级安全一站式客户端，后者统筹公司到业务部门对核心经营指标的统一认知。</p>
-        <ul>
-          <li><b>全链路框架搭建：</b>独立搭建大安全客户端框架及主视觉，覆盖登录、工作台、网络诊断、安全服务、IT 服务与系统设置</li>
-          <li><b>诊断流程可视化：</b>代理 / 完整性 / 地址探测 / DNS 连通性逐项状态反馈，一键修复不打断正常使用</li>
-          <li><b>智能体切换面板：</b>安全 / IT / 合规小助手按场景分发，标签化能力一目了然</li>
-          <li><b>指标全生命周期：</b>毓数平台指标字典、数据资产、自助查询、OBI、指标生成、数据建模多模块信息架构与界面设计，SQL 配置与逻辑运算树可视化校验</li>
-        </ul>
+        <p class="lead">覆盖安全服务与数据管理的多业务产品建设。</p>
+        <p class="bg">独立承担大安全客户端与毓数指标生成平台的设计任务，分别围绕企业内部安全服务与经营指标管理场景，从产品框架、信息架构到核心界面完成设计方案。</p>
+        <div class="sub-h">大安全客户端｜安全服务的一站式体验</div>
+        <p class="sub-p">围绕网络诊断、安全服务及 IT 支持等场景，建立统一的产品框架，优化多步骤诊断流程、状态反馈与任务处理体验，让复杂技术信息更容易理解和操作。</p>
+        <div class="sub-h">毓数平台｜复杂指标管理的清晰表达</div>
+        <p class="sub-p">针对指标定义、数据资产、指标生成及数据查询等场景，梳理多模块信息架构与操作流程，通过分层展示和可视化规则配置，降低复杂数据管理任务的理解成本。</p>
       </div>
 
     </div>
