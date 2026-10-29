@@ -252,6 +252,25 @@ section{padding:110px 0;position:relative}
 .proj .bg b{color:var(--txt);font-weight:600}
 .proj .lead{margin-top:14px;font-size:14px;font-weight:600;color:var(--txt);letter-spacing:.02em}
 .proj .sub-h{margin-top:16px;font-size:14px;font-weight:700;color:var(--txt)}
+.pc-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.pc-index{font-size:11px;font-weight:600;letter-spacing:.18em;color:var(--txt-faint)}
+.pc-top + h3{margin-top:10px}
+.pc-tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.pc-tags span{font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--cyan);border:1px solid rgba(56,225,255,.4);border-radius:100px;padding:3px 12px;background:rgba(56,225,255,.06)}
+.pc-sec{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:10.5px;font-weight:600;letter-spacing:.18em;color:var(--txt-faint)}
+.pc-items{margin:12px 0 18px;display:grid;gap:12px}
+.pc-item{display:grid;grid-template-columns:30px 1fr;column-gap:10px}
+.pc-item .n{font-size:13px;font-weight:700;color:var(--cyan);font-variant-numeric:tabular-nums;line-height:1.6}
+.pc-item .t{font-size:14px;font-weight:700;color:var(--txt);line-height:1.6}
+.pc-item .d{grid-column:2;font-size:13px;color:var(--txt-dim);margin-top:4px;line-height:1.75}
+.pc-outs{margin:12px 0 18px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pc-out{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.pc-out .v{font-size:22px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.3}
+.pc-out .k{margin-top:4px;font-size:11.5px;color:var(--txt-dim);letter-spacing:.04em}
+.pc-hl{margin:10px 0 18px;font-size:13px;color:var(--txt-dim)}
+.pc-foot{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:var(--txt-faint)}
+.pc-foot a{color:var(--cyan);font-weight:600;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.pc-foot a:hover{text-decoration:underline}
 .sec-lead{margin-top:18px;font-size:15px;font-weight:600;color:var(--txt);letter-spacing:.02em}
 .sec-intro{margin-top:10px;max-width:780px;font-size:14px;color:var(--txt-dim);line-height:1.9}
 .proj .sub-p{margin-top:6px;font-size:13.5px;color:var(--txt-dim);line-height:1.8}
@@ -438,6 +457,22 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .proj .lead{font-size:10pt;margin-top:2mm}
   .proj .sub-h{font-size:10pt;margin-top:2.5mm}
   .proj .sub-p{font-size:9pt;margin-top:1mm}
+  .pc-index{font-size:7.5pt}
+  .pc-top + h3{margin-top:1.5mm}
+  .pc-tags{margin-top:2mm;gap:1.5mm}
+  .pc-tags span{font-size:7pt;padding:0.8mm 2.5mm}
+  .pc-sec{font-size:7.5pt;margin-top:2.5mm;padding-top:2mm}
+  .pc-items{margin:2mm 0 2.5mm;gap:2mm}
+  .pc-item{grid-template-columns:6mm 1fr;column-gap:2mm}
+  .pc-item .n{font-size:8.5pt}
+  .pc-item .t{font-size:9.5pt}
+  .pc-item .d{font-size:8.5pt;margin-top:0.8mm}
+  .pc-outs{margin:2mm 0 2.5mm;gap:2mm}
+  .pc-out{padding:2mm 3mm}
+  .pc-out .v{font-size:11pt}
+  .pc-out .k{font-size:7.5pt}
+  .pc-hl{font-size:8.5pt;margin:1.5mm 0 2.5mm}
+  .pc-foot{font-size:7.5pt;padding-top:2mm}
   .sec-lead{font-size:10.5pt;margin-top:2mm}
   .sec-intro{font-size:9pt;margin-top:1mm;max-width:100%}
   .metric .v{font-size:11pt}
@@ -645,88 +680,92 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     </div>
 
     <div class="projects">
-      <div class="proj rv" data-tilt>
-        <div class="proj-top">
-          <h3>智客星 SCRM 与企业微信工作台</h3>
-          <div class="period">2023.12 — 至今</div>
+            <div class="proj rv" data-tilt>
+        <div class="pc-top">
+          <span class="pc-index">01 / PROJECT CASE</span>
+          <span class="period">2023.12 — 至今</span>
         </div>
-        <span class="role-chip">UI/UX 设计负责人</span>
+        <h3>智客星 SCRM 与企业微信工作台</h3>
+        <div class="pc-tags"><span>UI/UX 设计负责人</span><span>复杂业务交互</span></div>
         <p class="lead">让复杂的客户经营流程，变得更直观、更高效。</p>
-        <p class="bg">围绕企业微信客户经营与坐席作业场景，重新梳理核心操作流程与信息结构，解决配置复杂、入口分散、查询链路长等问题。</p>
-        <ul>
-          <li><b>01｜策略配置可视化</b>将复杂策略规则转化为节点式画布，执行逻辑一目了然。</li>
-          <li><b>02｜坐席工作台体验优化</b>重构客户查询、消息回复与任务处理等高频操作路径，减少重复切换。</li>
-          <li><b>03｜AI 话术推荐体验</b>将大模型推荐融入作业流程，优化话术展示、引用与反馈交互。</li>
-          <li><b>04｜客户信息统一呈现</b>统一额度、定价与优惠信息展示规则，减少跨页面查询。</li>
-        </ul>
-        <div class="metrics">
-          <div class="metric"><div class="v">10s → 2s</div><div class="k">坐席平均响应时间</div></div>
-          <div class="metric"><div class="v">3 步 → 1 步</div><div class="k">高频消息操作步骤</div></div>
+        <p class="bg">面向企业微信客户经营与坐席作业场景，优化策略配置、客户查询与消息处理流程，提升高频任务效率与信息一致性。</p>
+        <div class="pc-sec">CORE CONTRIBUTIONS</div>
+        <div class="pc-items">
+          <div class="pc-item"><div class="n">01</div><div class="t">策略配置可视化</div><div class="d">将复杂策略规则转化为节点式画布，优化配置流程与执行逻辑。</div></div>
+          <div class="pc-item"><div class="n">02</div><div class="t">坐席工作台优化</div><div class="d">重构信息层级与高频操作路径，减少重复切换与操作负担。</div></div>
+          <div class="pc-item"><div class="n">03</div><div class="t">AI 话术推荐体验</div><div class="d">优化推荐展示、选择引用与反馈交互，让智能能力融入实际作业流程。</div></div>
         </div>
+        <div class="pc-sec">PROJECT OUTCOMES</div>
+        <div class="pc-outs">
+          <div class="pc-out"><div class="v">10s → 2s</div><div class="k">坐席平均响应时间</div></div>
+          <div class="pc-out"><div class="v">3 步 → 1 步</div><div class="k">高频消息操作步骤</div></div>
+        </div>
+        <div class="pc-foot"><span>查看完整案例与设计过程</span><a href="https://jingjingtu.github.io/shijingya-ux-portfolio/#shot-wecom">查看项目 ↗</a></div>
       </div>
 
       <div class="proj rv rv-d1" data-tilt>
-        <div class="proj-top">
-          <h3>智能运营平台整体改版<br>与策略画布建设</h3>
-          <div class="period">2021.06 — 至今</div>
+        <div class="pc-top">
+          <span class="pc-index">02 / PROJECT CASE</span>
+          <span class="period">2021.06 — 至今</span>
         </div>
-        <span class="role-chip">UI/UX 设计负责人</span>
+        <h3>智能运营平台整体改版</h3>
+        <div class="pc-tags"><span>UI/UX 设计负责人</span><span>信息架构与数据可视化</span></div>
         <p class="lead">从复杂的运营配置，到清晰可控的策略管理体验。</p>
-        <p class="bg">参与平台从初期建设、整体改版到策略画布的持续演进，优化客群分析、策略配置与效果复盘等核心环节体验。</p>
-        <ul>
-          <li><b>01｜用户与客群洞察</b>以模块化展示与行为时间轴，让用户画像与行为变化更易理解。</li>
-          <li><b>02｜策略画布建设</b>多步骤配置可视化为画布，节点、连线与状态反馈更直观。</li>
-          <li><b>03｜标签需求管理</b>模块化条件组合筛选规则，人群预估与规则校验辅助决策。</li>
-          <li><b>04｜数据分析与可视化</b>按指标类型匹配图表表达，优化筛选、对比与钻取体验。</li>
-        </ul>
-        <div class="metrics">
-          <div class="metric"><div class="v">2周 → 2天</div><div class="k">策略部署周期</div></div>
-          <div class="metric"><div class="v">1/3 — 1/5</div><div class="k">配置场景耗时缩短</div></div>
+        <p class="bg">围绕用户洞察、策略配置与运营分析等核心场景，参与平台建设及持续改版，优化信息架构、配置流程与数据表达，降低复杂运营任务的理解和操作成本。</p>
+        <div class="pc-sec">CORE CONTRIBUTIONS</div>
+        <div class="pc-items">
+          <div class="pc-item"><div class="n">01</div><div class="t">用户与客群洞察</div><div class="d">重组用户属性与行为信息，通过模块化展示提升信息查阅效率。</div></div>
+          <div class="pc-item"><div class="n">02</div><div class="t">策略画布建设</div><div class="d">将多步骤策略配置转化为可视化画布，让规则创建与调整更加直观。</div></div>
+          <div class="pc-item"><div class="n">03</div><div class="t">运营配置与数据分析</div><div class="d">优化标签条件配置、指标展示与数据筛选，提升运营决策的信息可读性。</div></div>
         </div>
+        <div class="pc-sec">PROJECT OUTCOMES</div>
+        <div class="pc-outs">
+          <div class="pc-out"><div class="v">2 周 → 2 天</div><div class="k">策略部署周期</div></div>
+          <div class="pc-out"><div class="v">1/3 — 1/5</div><div class="k">配置场景耗时（缩短至）</div></div>
+        </div>
+        <div class="pc-foot"><span>查看完整案例与设计过程</span><a href="https://jingjingtu.github.io/shijingya-ux-portfolio/#shot-ops">查看项目 ↗</a></div>
       </div>
 
       <div class="proj rv" data-tilt>
-        <div class="proj-top">
-          <h3>Lumo AI SaaS 平台与官网设计</h3>
-          <div class="period">2025.10 — 2026.03</div>
+        <div class="pc-top">
+          <span class="pc-index">03 / PROJECT CASE</span>
+          <span class="period">2025.10 — 2026.03</span>
         </div>
-        <span class="role-chip">UI/UX 设计负责人</span>
+        <h3>Lumo AI SaaS 平台与官网设计</h3>
+        <div class="pc-tags"><span>UI/UX 设计负责人</span><span>AI 产品体验</span></div>
         <p class="lead">为多 AI 助手构建统一、易理解的产品体验。</p>
-        <p class="bg">参与 AI SaaS 平台信息架构重构与官网从 0 到 1 设计，建立清晰、易扩展的多助手产品体验。</p>
-        <ul>
-          <li><b>01｜多助手信息架构</b>梳理导航与功能入口，明确各助手能力边界与使用场景。</li>
-          <li><b>02｜AI 工作台设计</b>优化任务发起、结果展示等关键环节布局与反馈，统一体验。</li>
-          <li><b>03｜官网从 0 到 1 建设</b>规划官网内容层级，完成视觉与响应式设计。</li>
-          <li><b>04｜设计规范沉淀</b>统一色彩、字体、间距与表单规范，支持后续扩展复用。</li>
-        </ul>
-        <div class="metrics">
-          <div class="metric"><div class="v">0 → 1</div><div class="k">SaaS + 官网设计交付</div></div>
-          <div class="metric"><div class="v">架构重构</div><div class="k">多助手统一体验骨架</div></div>
-          <div class="metric"><div class="v">2 档+</div><div class="k">屏幕分辨率自适应</div></div>
+        <p class="bg">围绕企业经营分析、合规审核及文档处理等场景，参与 AI SaaS 平台信息架构重构与官网从 0 到 1 设计，建立清晰、统一且可扩展的产品体验。</p>
+        <div class="pc-sec">CORE CONTRIBUTIONS</div>
+        <div class="pc-items">
+          <div class="pc-item"><div class="n">01</div><div class="t">多助手信息架构</div><div class="d">梳理不同 AI 助手的能力边界与使用场景，重组产品导航和功能入口。</div></div>
+          <div class="pc-item"><div class="n">02</div><div class="t">AI 工作台设计</div><div class="d">围绕任务发起、结果展示与信息查看，优化页面布局和交互反馈。</div></div>
+          <div class="pc-item"><div class="n">03</div><div class="t">官网从 0 到 1 建设</div><div class="d">规划产品能力、应用场景与部署信息，完成官网视觉及响应式设计。</div></div>
+          <div class="pc-item"><div class="n">04</div><div class="t">设计规范沉淀</div><div class="d">统一色彩、字体、间距与基础交互规范，支持平台持续迭代。</div></div>
         </div>
+        <div class="pc-foot"><span>查看完整案例与设计过程</span><a href="https://jingjingtu.github.io/shijingya-ux-portfolio/#shot-lumo">查看项目 ↗</a></div>
       </div>
 
       <div class="proj rv rv-d1" data-tilt>
-        <div class="proj-top">
-          <h3>移动数据看板与指标预警</h3>
-          <div class="period">2025.03 — 2025.06</div>
+        <div class="pc-top">
+          <span class="pc-index">04 / PROJECT CASE</span>
+          <span class="period">2025.03 — 2025.06</span>
         </div>
-        <span class="role-chip">UI/UX 设计师</span>
+        <h3>移动数据看板与指标预警</h3>
+        <div class="pc-tags"><span>UI/UX 设计师</span><span>移动端适配</span></div>
         <p class="lead">让复杂经营数据，在移动端也能快速看懂。</p>
-        <p class="bg">将 PC 端数据分析能力适配至移动场景，满足碎片化场景下快速掌握经营信息的需求。</p>
-        <ul>
-          <li><b>01｜移动端信息重构</b>重新定义展示优先级，突出核心指标与关键变化。</li>
-          <li><b>02｜数据展示优化</b>以指标卡片、趋势图表与明细列表建立清晰数据层级。</li>
-          <li><b>03｜复杂操作轻量化</b>以筛选弹层与报表切换兼顾查询灵活性与操作效率。</li>
-        </ul>
-        <div class="metrics">
-          <div class="metric"><div class="v">移动 + PC</div><div class="k">多端体验适配</div></div>
-          <div class="metric"><div class="v">159</div><div class="k">承载指标</div></div>
-          <div class="metric"><div class="v">6</div><div class="k">支持业务线</div></div>
+        <p class="bg">面向企业管理者与业务负责人，将 PC 端数据分析能力适配至移动场景，围绕核心指标、趋势变化与业务明细，重构移动端的信息层级与操作方式。</p>
+        <div class="pc-sec">CORE CONTRIBUTIONS</div>
+        <div class="pc-items">
+          <div class="pc-item"><div class="n">01</div><div class="t">移动端信息重构</div><div class="d">根据屏幕空间与使用场景，突出核心指标和关键变化。</div></div>
+          <div class="pc-item"><div class="n">02</div><div class="t">数据展示优化</div><div class="d">结合指标卡片、趋势图表与明细列表，建立清晰的数据层级。</div></div>
+          <div class="pc-item"><div class="n">03</div><div class="t">复杂操作轻量化</div><div class="d">优化筛选、报表切换与指标自定义，兼顾移动端的灵活性与操作效率。</div></div>
         </div>
+        <div class="pc-sec">PROJECT HIGHLIGHT</div>
+        <p class="pc-hl">PC 数据分析能力的移动端适配与重构。</p>
+        <div class="pc-foot"><span>查看完整案例与设计过程</span><a href="https://jingjingtu.github.io/shijingya-ux-portfolio/#shot-mobile">查看项目 ↗</a></div>
       </div>
 
-      <div class="proj proj-wide rv" data-tilt>
+<div class="proj proj-wide rv" data-tilt>
         <div class="proj-top">
           <h3>企业级工具产品设计实践</h3>
           <div class="period">2025</div>
