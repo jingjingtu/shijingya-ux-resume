@@ -316,11 +316,13 @@ section{padding:110px 0;position:relative}
 .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;margin-top:8px}
 .contact-big{
   border:1px solid var(--line);border-radius:var(--r-lg);padding:52px 44px;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
   background:linear-gradient(150deg,rgba(56,225,255,.10),rgba(61,123,255,.06) 45%,rgba(143,93,255,.10));
 }
+.contact-big p:last-of-type{margin-bottom:28px}
 .contact-big h3{font-size:clamp(26px,3.4vw,36px);font-weight:800;line-height:1.35}
 .contact-big p{margin-top:14px;color:var(--txt-dim);font-size:15px}
-.cb-sign{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.cb-sign{margin-top:auto;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
 .cb-sign .nm{font-size:16px;font-weight:700}
 .cb-sign .sub{margin-top:6px;font-size:13px;color:var(--txt-dim)}
 .cb-sign .talk{font-size:13px;font-weight:700;letter-spacing:.22em;color:var(--cyan);white-space:nowrap}
@@ -501,7 +503,8 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .contact-big{padding:5mm 6mm;backdrop-filter:none}
   .contact-big h3{font-size:13pt}
   .contact-big p{font-size:9pt;margin-top:2mm}
-  .cb-sign{margin-top:3mm;padding-top:2.5mm}
+  .cb-sign{margin-top:auto;padding-top:2.5mm}
+  .contact-big p:last-of-type{margin-bottom:3mm}
   .cb-sign .nm{font-size:10pt}
   .cb-sign .sub{font-size:8.5pt;margin-top:1mm}
   .cb-sign .talk{font-size:8pt}
