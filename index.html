@@ -94,12 +94,13 @@ main{position:relative;z-index:2}
 .hero h1{
   font-size:clamp(52px,7.5vw,96px);line-height:1.06;font-weight:800;letter-spacing:.01em;
 }
-.hero h1 .grad{
-  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
-  background-size:220% 220%;animation:gradmove 7s ease infinite;
+.hero h1 .grad-dot{
+  display:inline-block;width:.115em;height:.115em;border-radius:50%;
+  background:var(--grad);background-size:220% 220%;animation:gradmove 7s ease infinite;
+  margin:0 .26em 0 .12em;vertical-align:.1em;
 }
 .hero h1 .h1-title{
-  font-size:.38em;font-weight:700;letter-spacing:.24em;margin-left:.55em;vertical-align:.42em;
+  font-size:.36em;font-weight:700;letter-spacing:.3em;
   background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:220% 220%;animation:gradmove 7s ease infinite;white-space:nowrap;
 }
@@ -489,7 +490,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   <div class="hero-row">
     <div class="hero-left">
       <div class="hero-kicker rv on"><span class="pulse"></span>UX / INTERACTION DESIGNER · 开放求职中</div>
-      <h1 class="rv on rv-d1">师静雅<span class="grad">.</span><span class="h1-title">设计专家</span></h1>
+      <h1 class="rv on rv-d1">师静雅<span class="grad-dot"></span><span class="h1-title">设计专家</span></h1>
       <div class="role rv on rv-d1">让 <b>复杂业务</b>，拥有<b>更好的产品体验</b>。</div>
       <p class="hero-sub rv on rv-d2">10 年多端产品设计经验，聚焦企业级业务系统、复杂交互与设计体系建设。<br>具备 B 端、C 端及官网设计经验，参与多个业务平台从 0 到 1 建设与持续迭代。擅长将复杂业务规则转化为清晰、高效的交互体验，并持续探索 AI 辅助设计的实践与落地。<br><span class="sub-label">专业方向：</span>企业级产品设计 / 复杂业务交互 / Design System / AI 辅助设计</p>
 
