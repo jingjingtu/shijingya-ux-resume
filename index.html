@@ -319,7 +319,11 @@ section{padding:110px 0;position:relative}
   background:linear-gradient(150deg,rgba(56,225,255,.10),rgba(61,123,255,.06) 45%,rgba(143,93,255,.10));
 }
 .contact-big h3{font-size:clamp(26px,3.4vw,36px);font-weight:800;line-height:1.35}
-.contact-big p{margin-top:14px;color:var(--txt-dim);font-size:15px;max-width:420px}
+.contact-big p{margin-top:14px;color:var(--txt-dim);font-size:15px}
+.cb-sign{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.cb-sign .nm{font-size:16px;font-weight:700}
+.cb-sign .sub{margin-top:6px;font-size:13px;color:var(--txt-dim)}
+.cb-sign .talk{font-size:13px;font-weight:700;letter-spacing:.22em;color:var(--cyan);white-space:nowrap}
 .contact-list{display:grid;gap:16px}
 .contact-item{
   display:flex;align-items:center;gap:16px;padding:22px 26px;border:1px solid var(--line);border-radius:var(--r-md);
@@ -497,6 +501,10 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .contact-big{padding:5mm 6mm;backdrop-filter:none}
   .contact-big h3{font-size:13pt}
   .contact-big p{font-size:9pt;margin-top:2mm}
+  .cb-sign{margin-top:3mm;padding-top:2.5mm}
+  .cb-sign .nm{font-size:10pt}
+  .cb-sign .sub{font-size:8.5pt;margin-top:1mm}
+  .cb-sign .talk{font-size:8pt}
   .contact-list{gap:2mm}
   .contact-item{padding:2.5mm 3.5mm;box-shadow:none;backdrop-filter:none;break-inside:avoid}
   .contact-item .ic{width:8mm;height:8mm;font-size:10pt;border-radius:2.5mm}
@@ -833,8 +841,13 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     </div>
     <div class="contact-grid">
       <div class="contact-big rv">
-        <h3>让复杂业务更清晰，<br>让<span class="grad" style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">好的设计</span>真正落地。</h3>
-        <p>目前关注企业级产品体验、复杂业务交互、设计系统及 AI 产品体验相关机会。<br>期待与重视产品体验、设计价值和持续创新的团队交流。</p>
+        <h3>让复杂业务更清晰，<br>让<span class="grad" style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">设计价值</span>真正落地。</h3>
+        <p>10 年产品设计经验，专注企业级产品体验、复杂业务交互与设计体系建设，持续探索 AI 辅助设计的实践与应用。</p>
+        <p>期待与优秀的产品团队深入交流，共同解决真实业务问题，创造更好的产品体验。</p>
+        <div class="cb-sign">
+          <div><div class="nm">师静雅 · 设计专家</div><div class="sub">资深 UX/UI 设计 · 北京求职</div></div>
+          <div class="talk">LET'S TALK</div>
+        </div>
       </div>
       <div class="contact-list">
         <a class="contact-item rv" href="tel:18210885061">
