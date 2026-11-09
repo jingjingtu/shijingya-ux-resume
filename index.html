@@ -84,7 +84,7 @@ main{position:relative;z-index:2}
 .sidenav a.active .label{opacity:1;transform:none}
 
 /* ---------- hero ---------- */
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;position:relative;padding:120px 32px 132px}
+.hero{min-height:100svh;display:grid;grid-template-rows:1fr auto;position:relative;padding:120px 32px 60px}
 .hero-row{display:flex;align-items:center;justify-content:space-between;gap:56px}
 .hero-left{flex:1;min-width:0}
 .hero-kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.35em;color:var(--cyan);text-transform:uppercase;margin-bottom:26px}
@@ -144,7 +144,7 @@ main{position:relative;z-index:2}
   border-radius:100px;padding:7px 16px;font-size:12.5px;display:flex;gap:8px;align-items:center;
   box-shadow:var(--shadow);color:var(--txt);white-space:nowrap;backdrop-filter:blur(8px);
 }
-.scroll-hint{position:absolute;bottom:46px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--txt-faint);font-size:11px;letter-spacing:.3em}
+.scroll-hint{justify-self:center;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--txt-faint);font-size:11px;letter-spacing:.3em;margin-top:32px}
 .scroll-hint .wheel{width:22px;height:36px;border:1.5px solid var(--txt-faint);border-radius:12px;position:relative}
 .scroll-hint .wheel::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;border-radius:2px;background:var(--cyan);transform:translateX(-50%);animation:wheel 1.8s infinite}
 @keyframes wheel{0%{opacity:1;top:7px}70%{opacity:0;top:20px}100%{opacity:0;top:7px}}
@@ -378,11 +378,10 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   .wrap{padding:0 22px}
   section{padding:80px 0}
 }
-/* 矮视口：压缩首屏上下留白，让指标区与 SCROLL 提示不重叠、且提示仍在首屏可见 */
+/* 矮视口：压缩首屏上留白，让内容与 SCROLL 提示尽量同屏 */
 @media (max-height:900px) and (min-width:901px){
-  .hero{padding-top:104px;padding-bottom:118px}
+  .hero{padding-top:104px}
   .stats{margin-top:48px}
-  .scroll-hint{bottom:38px}
 }
 @media print{
   /* ---- 打印 / PDF 导出：与网页一致的深色科技风 ---- */
